@@ -19,3 +19,16 @@ yarn dev
 ```
 yarn deploy
 ```
+
+After the Next.js build, you'll see the following output from the `edge` CLI:
+
+```
+processing: edgecastfunctions
+runtime:  default
+language:  js
+successfully uploaded
+compiling function...
+compile failed
+Unable to compile function.
+You may be trying to vendor an incompatible dependency.
+```
