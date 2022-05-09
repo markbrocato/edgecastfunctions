@@ -1,0 +1,7 @@
+dictionary: ""
+entryPoint: myEdgeFunction
+jsConfig: {}
+language: js
+name: edgecastfunctions
+runtime: default
+srcFolder: ./next-app/.next/standalone

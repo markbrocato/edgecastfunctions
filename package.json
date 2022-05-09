@@ -1,0 +1,11 @@
+{
+  "name": "edgecastfunctions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn build:next; cp src/main.js next-app/.next/standalone",
+    "build:next": "pushd next-app; yarn build; popd;",
+    "deploy": "yarn build && edge fn up"
+  }
+}
