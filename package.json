@@ -4,6 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "postinstall": "pushd next-app; yarn; popd;",
+    "dev": "pushd next-app; yarn dev; popd;",
     "build": "yarn build:next; cp src/main.js next-app/.next/standalone",
     "build:next": "pushd next-app; yarn build; popd;",
     "deploy": "yarn build && edge fn up"
